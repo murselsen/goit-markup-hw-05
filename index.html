@@ -57,7 +57,14 @@
       <section class="hero">
         <div class="container">
           <h1 class="title">Effective solutions for your business</h1>
-          <button class="btn" type="button">order service</button>
+          <button
+            class="btn"
+            id="modalTarget"
+            type="button"
+            onclick="document.getElementById('modal').style.display='block'"
+          >
+            order service
+          </button>
         </div>
       </section>
 
@@ -448,7 +455,6 @@
             <input
               type="email"
               name="email"
-              id="email"
               placeholder="E-mail"
               required
             />
@@ -463,10 +469,62 @@
       </div>
     </footer>
 
-    <div class="modal">
-      <span class="closeBtn">
-        <svg ></svg>
-      </span>
+    <div class="modal" id="modal">
+      <div class="modal-container">
+        <span class="closeBtn">
+          <svg
+            width="24"
+            height="24"
+            onclick="document.getElementById('modal').style.display='none'"
+          >
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </span>
+        <div class="modal-content">
+          <p class="modal-header">
+            Leave your contacts and we will call you back
+          </p>
+          <form action="#" class="modal-form">
+            <div class="form-input-group">
+              <label for="name" class="form-label">Name</label>
+              <div class="form-input">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+                <input type="text" name="name" id="name" required />
+              </div>
+            </div>
+            <div class="form-input-group">
+              <label for="phone" class="form-label">Phone</label>
+              <div class="form-input">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                <input type="tel" name="phone" id="phone" required />
+              </div>
+            </div>
+            <div class="form-input-group">
+              <label for="email" class="form-label">Email</label>
+              <div class="form-input">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+                <input type="email" name="email" id="email" required />
+              </div>
+            </div>
+            <div class="form-input-group">
+              <label for="comment" class="form-label">Comment</label>
+              <div class="form-input">
+                <textarea
+                  name="comment"
+                  id="comment"
+                  placeholder="Text input"
+                ></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>

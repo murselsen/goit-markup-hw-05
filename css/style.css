@@ -508,7 +508,67 @@ footer .form button {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 100%;
+  background: rgba(46, 47, 66, 0.4);
+  z-index: 1;
+  /* display: none; */
+}
+.modal .modal-container {
+  position: relative;
+  margin: 80px auto;
+  width: 408px;
+  height: 584px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  padding: 72px 24px 24px 24px;
+}
+.modal .modal-container .closeBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.modal .modal-container .modal-content .modal-header {
+  color: #2e2f42;
+  text-align: center;
+  /* Body Medium */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+}
+.modal .modal-container .modal-content .modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.modal .modal-container .modal-content .modal-form .form-input-group {
+  border: 1px solid #4d5ae5;
+  width: 100%;
+}
+
+.modal
+  .modal-container
+  .modal-content
+  .modal-form
+  .form-input-group
+  .form-label {
+  color: #8e8f99;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.48px;
 }
