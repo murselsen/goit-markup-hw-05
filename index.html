@@ -449,16 +449,21 @@
             </li>
           </ul>
         </div>
+
+
+        
         <div class="form-container">
           <p class="title">Subscribe</p>
           <form action="#" method="get" class="form">
-            <input
-              type="email"
-              name="email"
-              class="input"
-              placeholder="E-mail"
-              required
-            />
+            <label class="input-label" for="">
+              <input
+                type="email"
+                name="email"
+                class="input"
+                placeholder="E-mail"
+                required
+              />
+            </label>
             <button class="button" type="submit">
               Subscribe
               <svg width="24" height="24">
@@ -472,15 +477,15 @@
 
     <div class="modal" id="modal">
       <div class="modal-container">
-        <span class="closeBtn">
+        <button type="button" class="closeBtn">
           <svg
-            width="24"
-            height="24"
+            width="8"
+            height="8"
             onclick="document.getElementById('modal').style.display='none'"
           >
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
-        </span>
+        </button>
         <div class="modal-content">
           <p class="modal-header">
             Leave your contacts and we will call you back
