@@ -572,8 +572,8 @@ footer .form-container .button .icon {
   border: none;
 }
 
-.modal .modal-container .closeBtn:hover + .closeBtn .closeIcon,
-.modal .modal-container .closeBtn:focus + .closeBtn .closeIcon {
+.modal .modal-container .closeBtn:hover .closeIcon,
+.modal .modal-container .closeBtn:focus .closeIcon {
   fill: #ffffff;
 }
 .modal .modal-container .closeBtn .closeIcon {
@@ -596,9 +596,6 @@ footer .form-container .button .icon {
 
 .modal .modal-container .modal-form .form-input-group {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
   margin-bottom: 8px;
 }
 
@@ -613,10 +610,6 @@ footer .form-container .button .icon {
 }
 .modal .modal-container .modal-form .form-input-group .form-input {
   position: relative;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  gap: 4px;
 }
 .modal .modal-container .modal-form .form-input-group .form-input .input {
   width: 100%;
@@ -687,14 +680,41 @@ footer .form-container .button .icon {
   align-items: center;
   justify-content: center;
 }
+.modal
+  .modal-container
+  .modal-form
+  .form-input-group.checkbox
+  .form-label
+  .label-icon {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.modal
+  .modal-container
+  .modal-form
+  .form-input-group.checkbox:checked
+  .label-icon {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
 
 .modal
   .modal-container
   .modal-form
   .form-input-group.checkbox
-  .inputCheckbox:checked
   .form-label
-  .text {
+  .label-link {
+  color: #4d5ae5;
 }
 
 .modal .modal-container .modal-form .form-button {
@@ -709,4 +729,6 @@ footer .form-container .button .icon {
   color: #ffffff;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  background-color: #4d5ae5;
 }
