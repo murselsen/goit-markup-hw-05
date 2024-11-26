@@ -554,8 +554,10 @@ footer .form button {
 }
 
 .modal .modal-container .modal-content .modal-form .form-input-group {
-  border: 1px solid #4d5ae5;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .modal
@@ -571,4 +573,28 @@ footer .form button {
   font-weight: 400;
   line-height: 14px;
   letter-spacing: 0.48px;
+}
+.modal
+  .modal-container
+  .modal-content
+  .modal-form
+  .form-input-group
+  .form-input {
+  border-radius: 4px;
+  border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 11px 16px;
+}
+.modal
+  .modal-container
+  .modal-content
+  .modal-form
+  .form-input-group
+  .form-input
+  input {
+  border-color: unset;
+  box-shadow: none;
+  outline: none;
 }
