@@ -507,13 +507,18 @@ footer .form-container .button {
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   color: #ffffff;
   border: 0;
   border-radius: 4px;
   background: #4d5ae5;
   cursor: pointer;
   min-width: 165px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+footer .form-container .button .icon {
+  margin-left: 16px;
 }
 
 /* Modal */
