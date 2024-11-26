@@ -690,10 +690,13 @@ footer .form-container .button .icon {
   flex-direction: row;
   align-items: center;
 }
-.modal .modal-container .modal-form .form-input-group.checkbox .inputCheckbox {
-}
+
 .modal .modal-container .modal-form .form-input-group.checkbox .form-label {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.modal .modal-container .modal-form .form-input-group.checkbox .inputCheckbox:checked .form-label .text {
+  
 }
