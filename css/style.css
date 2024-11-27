@@ -709,9 +709,9 @@ footer .form-container .button .icon {
   .form-input-group-checkbox
   .form-input-group-content-inputcheckbox:checked
   .form-input-group-label-icon {
-  background-color: #404bbf;
+  background-color: #404BBF;
   border: none;
-  fill: #f4f4fd;
+  fill: #F4F4FD;
 }
 
 .modal
