@@ -649,7 +649,7 @@ footer .form-container .button .icon {
   margin-bottom: 16px;
 }
 
-.modal-window .modal-container .modal-container-form .form-input-group-textarea .form-input-group-content-inputTextarea {
+.modal-window .modal-container .modal-container-form .form-input-group-textarea .form-input-group-content-inputtextarea {
   width: 100%;
   height: 120px;
   font-size: 12px;
@@ -668,7 +668,7 @@ footer .form-container .button .icon {
   .modal-container
   .modal-container-form
   .form-input-group-textarea
-  .form-input-group-content-inputTextarea:focus {
+  .form-input-group-content-inputtextarea:focus {
   border-color: #4d5ae5;
 }
 
