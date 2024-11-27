@@ -481,7 +481,7 @@ footer .form-container .form {
   flex-direction: row;
   gap: 24px;
 }
-footer .form-container .input {
+footer .form-container .form-input-group-content-input{
   width: 264px;
   height: 40px;
   background-color: transparent;
@@ -523,7 +523,7 @@ footer .form-container .button .icon {
 
 /* Modal */
 
-.modal {
+.modal-window {
   position: fixed;
   top: 0;
   left: 0;
@@ -535,7 +535,7 @@ footer .form-container .button .icon {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: none;
 }
-.modal .modal-container {
+.modal-window .modal-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -549,7 +549,7 @@ footer .form-container .button .icon {
   padding: 72px 24px 24px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal .modal-container .closeBtn {
+.modal-window .modal-container .modal-container-close-btn {
   cursor: pointer;
   position: absolute;
   top: 24px;
@@ -566,20 +566,20 @@ footer .form-container .button .icon {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal .modal-container .closeBtn:hover,
-.modal .modal-container .closeBtn:focus {
+.modal-window .modal-container .modal-container-close-btn:hover,
+.modal-window .modal-container .modal-container-close-btn:focus {
   background-color: #404bbf;
   border: none;
 }
 
-.modal .modal-container .closeBtn:hover .closeIcon,
-.modal .modal-container .closeBtn:focus .closeIcon {
+.modal-window .modal-container .modal-container-close-btn:hover .modal-container-close-btn-icon,
+.modal-window .modal-container .modal-container-close-btn:focus .modal-container-close-btn-icon {
   fill: #ffffff;
 }
-.modal .modal-container .closeBtn .closeIcon {
+.modal-window .modal-container .modal-container-close-btn .modal-container-close-btn-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal .modal-container .modal-header {
+.modal-window .modal-container .modal-container-header {
   color: #2e2f42;
   text-align: center;
   font-size: 16px;
@@ -588,18 +588,18 @@ footer .form-container .button .icon {
   letter-spacing: 0.32px;
   margin-bottom: 16px;
 }
-.modal .modal-container .modal-form {
+.modal-window .modal-container .modal-container-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.modal .modal-container .modal-form .form-input-group {
+.modal-window .modal-container .modal-container-form .form-input-group {
   width: 100%;
   margin-bottom: 8px;
 }
 
-.modal .modal-container .modal-form .form-input-group .form-label {
+.modal-window .modal-container .modal-container-form .form-input-group .form-input-group-label {
   color: #8e8f99;
   font-size: 12px;
   font-style: normal;
@@ -608,10 +608,10 @@ footer .form-container .button .icon {
   letter-spacing: 0.48px;
   margin-bottom: 4px;
 }
-.modal .modal-container .modal-form .form-input-group .form-input {
+.modal-window .modal-container .modal-container-form .form-input-group .from-group-content {
   position: relative;
 }
-.modal .modal-container .modal-form .form-input-group .form-input .input {
+.modal-window .modal-container .modal-container-form .form-input-group .from-group-content .form-input-group-content-input{
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -621,10 +621,10 @@ footer .form-container .button .icon {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal .modal-container .modal-form .form-input-group .form-input .input:focus {
+.modal-window .modal-container .modal-container-form .form-input-group .from-group-content .input:focus {
   border-color: #4d5ae5;
 }
-.modal .modal-container .modal-form .form-input-group .form-input .inputIcon {
+.modal-window .modal-container .modal-container-form .form-input-group .from-group-content .form-input-group-content-icon {
   position: absolute;
   top: 50%;
   left: 16px;
@@ -633,19 +633,19 @@ footer .form-container .button .icon {
 }
 .modal
   .modal-container
-  .modal-form
+  .modal-container-form
   .form-input-group
   .form-input
   .input:focus
-  .inputIcon {
+  .form-input-group-content-icon {
   fill: #4d5ae5;
 }
 
-.modal .modal-container .modal-form .form-input-group.textarea {
+.modal-window .modal-container .modal-container-form .form-input-group.textarea {
   margin-bottom: 16px;
 }
 
-.modal .modal-container .modal-form .form-input-group.textarea .inputTextarea {
+.modal-window .modal-container .modal-container-form .form-input-group.content-inputTextarea {
   width: 100%;
   height: 120px;
   font-size: 12px;
@@ -662,30 +662,30 @@ footer .form-container .button .icon {
 }
 .modal
   .modal-container
-  .modal-form
+  .modal-container-form
   .form-input-group.textarea
-  .inputTextarea:focus {
+  .form-input-group-content-inputTextarea:focus {
   border-color: #4d5ae5;
 }
 
-.modal .modal-container .modal-form .form-input-group.checkbox {
+.modal-window .modal-container .modal-container-form .form-input-group.checkbox {
   margin-bottom: 24px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.modal .modal-container .modal-form .form-input-group.checkbox .form-label {
+.modal-window .modal-container .modal-container-form .form-input-group.checkbox .form-input-group-label {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 .modal
   .modal-container
-  .modal-form
+  .modal-container-form
   .form-input-group.checkbox
-  .form-label
-  .label-icon {
+  .form-input-group-label
+  .form-input-group-label-icon {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -700,9 +700,9 @@ footer .form-container .button .icon {
 }
 .modal
   .modal-container
-  .modal-form
+  .modal-container-form
   .form-input-group.checkbox:checked
-  .label-icon {
+  .form-input-group-label-icon {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
@@ -710,14 +710,14 @@ footer .form-container .button .icon {
 
 .modal
   .modal-container
-  .modal-form
+  .modal-container-form
   .form-input-group.checkbox
-  .form-label
-  .label-link {
+  .form-input-group-label
+  .form-input-group-label-link {
   color: #4d5ae5;
 }
 
-.modal .modal-container .modal-form .form-button {
+.modal-window .modal-container .modal-container-form .modal-container-form-button {
   display: block;
   min-width: 169px;
   height: 56px;
