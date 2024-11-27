@@ -591,7 +591,7 @@ footer .form-container .button .icon {
 .modal-window .modal-container .modal-container-form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .modal-window .modal-container .modal-container-form .form-input-group {
@@ -642,11 +642,11 @@ footer .form-container .button .icon {
   fill: #4d5ae5;
 }
 
-.modal-window .modal-container .modal-container-form .form-input-group .form-input-group-textarea {
+.modal-window .modal-container .modal-container-form .form-input-group-textarea {
   margin-bottom: 16px;
 }
 
-.modal-window .modal-container .modal-container-form .form-input-group-content-inputTextarea {
+.modal-window .modal-container .modal-container-form .form-input-group-textarea .form-input-group-content-inputTextarea {
   width: 100%;
   height: 120px;
   font-size: 12px;
@@ -676,7 +676,7 @@ footer .form-container .button .icon {
   align-items: center;
 }
 
-.modal-window .modal-container .modal-container-form .form-input-group.checkbox .form-input-group-label {
+.modal-window .modal-container .modal-container-form .form-input-group-checkbox .form-input-group-label {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -698,11 +698,12 @@ footer .form-container .button .icon {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  box-sizing: border-box;
 }
 .modal
   .modal-container
   .modal-container-form
-  .form-input-group.checkbox:checked
+  .form-input-group-checkbox:checked
   .form-input-group-label-icon {
   background-color: #404bbf;
   border: none;
@@ -712,7 +713,7 @@ footer .form-container .button .icon {
 .modal
   .modal-container
   .modal-container-form
-  .form-input-group.checkbox
+  .form-input-group-checkbox
   .form-input-group-label
   .form-input-group-label-link {
   color: #4d5ae5;
