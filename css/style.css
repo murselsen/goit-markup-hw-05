@@ -481,7 +481,7 @@ footer .form-container .form {
   flex-direction: row;
   gap: 24px;
 }
-footer .form-container .form-input-group-content-input{
+footer .form-container .form .input{
   width: 264px;
   height: 40px;
   background-color: transparent;
