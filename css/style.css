@@ -609,11 +609,11 @@ footer .form-container .button .icon {
   margin-bottom: 4px;
   display: block;
 }
-.modal-window .modal-container .modal-container-form .form-input-group .from-group-content {
+.modal-window .modal-container .modal-container-form .form-input-group .form-input-group-content {
   width: 100%;
   position: relative;
 }
-.modal-window .modal-container .modal-container-form .form-input-group .from-group-content .form-input-group-content-input{
+.modal-window .modal-container .modal-container-form .form-input-group .form-input-group-content .form-input-group-content-input{
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
