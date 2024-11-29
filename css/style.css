@@ -604,6 +604,7 @@ footer .form-container .button .icon {
 
 .modal-form-item .form-label {
   color: #8e8f99;
+  display: block;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -687,7 +688,7 @@ footer .form-container .button .icon {
   fill: transparent;
   margin-right: 5px;
 }
-#user-privacy:checked + #form-label-icon-checkbox {
+.form-checkbox:checked + .form-label-icon {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
