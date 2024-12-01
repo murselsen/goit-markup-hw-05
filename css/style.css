@@ -687,13 +687,6 @@ footer .form-container .button .icon {
   align-items: center;
   fill: transparent;
   margin-right: 5px;
-  position: relative;
-}
-
-.modal-form-item-checkbox .form-label .form-label-icon .form-label-icon-box {
-  position: absolute;
-  top: 30%;
-  left: 30%;
 }
 
 .form-checkbox:checked + .form-label .form-label-icon {
