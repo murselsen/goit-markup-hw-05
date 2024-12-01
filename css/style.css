@@ -683,12 +683,20 @@ footer .form-container .button .icon {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   fill: transparent;
   margin-right: 5px;
+  position: relative;
 }
-.form-checkbox:checked + .form-label-icon {
+
+.modal-form-item-checkbox .form-label .form-label-icon .form-label-icon-box {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.form-checkbox:checked + .form-label .form-label-icon {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
